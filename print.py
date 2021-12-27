@@ -3,7 +3,7 @@
 # how to use Print Function
 
 # basic output
-print('Python Start!')
+print('Python Start!') #print문은 기본적으로 한줄 띄움
 print("Python Start!")
 print()
 print("""Python Start!""")
