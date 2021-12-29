@@ -3,6 +3,12 @@
 # Python DataType List
 
 # list datatype(sequence)
+'''
+sequence
+중복
+수정
+삭제
+'''
 a = []
 b = list()
 
