@@ -102,3 +102,14 @@ print(list_fu)
 while list_fu: #비어있을때까지 실행
     data = list_fu.pop()
     print(data)
+
+### enumerate - for문에서 index변수 없이 실행가능하게 해줌
+list_enumer = ['a','b','c']
+for element in enumerate(list_enumer):
+    print(element) #tuple 형태로 반환 해준다
+
+for idx,element in enumerate(list_enumer):
+    print(idx,element) #index변수를 지정해줄때
+
+for idx,element in enumerate(list_enumer, start=1):
+    print(idx,element) #index를 1부터 시작할때

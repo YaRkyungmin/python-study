@@ -83,10 +83,11 @@ split 특정 단어기준으로 분리하여 리스트로 반환
 upper 모든 문자열을 대문자로 변경
 lower 모든 문자열을 소문자로 변경
 isalnum 0-9숫자와 a-z알파벳으로만 구성돼있는지 확인해줌
+isalpha 알파벳인지를 판단하여 bool값을 반환
+isdigit 숫자인지를 판단하여 bool값을 반환
 join
 startswith
 count
-isalpha
 '''
 cp_str = 'python'
 ew_str = 'python!'
@@ -97,6 +98,8 @@ up_str = 'python'
 lo_str = 'PYTHON'
 is_str = 'python123!!@'
 is_str1 = 'python123'
+is_digit = '2'
+is_alpha = 'a'
 print("capitalize:", cp_str.capitalize()) 
 print("endswith:", ew_str.endswith("!"))
 print("replace:", re_str.replace('python','replace'))
@@ -106,6 +109,8 @@ print("upper:",up_str.upper())
 print("lower:",lo_str.lower())
 print("isalnum:",is_str.isalnum())
 print("isalnum:",is_str1.isalnum())
+print("isalpha:",is_alpha.isalpha())
+print("isdigit:",is_digit,is_digit())
 
 ## 반복(시퀀스-순서가있는 배열형태) 
 sq_str = 'im squence'
