@@ -80,9 +80,10 @@ replace 문자를 교체해줌
 endswith 마지막문자가 조건대로 끝나는지를 판별
 sorted 문자열을 넣어주면 리스트형태로 반환
 split 특정 단어기준으로 분리하여 리스트로 반환
+upper 모든 문자열을 대문자로 변경
+lower 모든 문자열을 소문자로 변경
+isalnum 0-9숫자와 a-z알파벳으로만 구성돼있는지 확인해줌
 join
-upper 
-isalnum
 startswith
 count
 isalpha
@@ -92,11 +93,19 @@ ew_str = 'python!'
 re_str = 'python python python'
 st_str = 'pythonpython'
 sp_str = 'p y th o n'
+up_str = 'python'
+lo_str = 'PYTHON'
+is_str = 'python123!!@'
+is_str1 = 'python123'
 print("capitalize:", cp_str.capitalize()) 
 print("endswith:", ew_str.endswith("!"))
 print("replace:", re_str.replace('python','replace'))
 print("sorted:", sorted(st_str))
 print("split:",sp_str.split(' '))
+print("upper:",up_str.upper())
+print("lower:",lo_str.lower())
+print("isalnum:",is_str.isalnum())
+print("isalnum:",is_str1.isalnum())
 
 ## 반복(시퀀스-순서가있는 배열형태) 
 sq_str = 'im squence'
@@ -116,7 +125,8 @@ print(sl_str[0:len(sl_str):2])
 print(sl_str[-10:])
 print(sl_str[-10:-1]) #뒤의 인자 -1을 해주는데 까지
 print(sl_str[::2])
-print(sl_str[::-1])#뒤에서부터 
+print(sl_str[::-1])#뒤에서부터
+print(sl_str[100:200]) #sliching 할때는 인덱스 범위를 벗어나도 out of range error가 나지 않는다. 
 
 ## ASCII code : ord()함수, chr()함수
 a = 'z'
