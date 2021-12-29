@@ -76,7 +76,7 @@ print(type(str(tc_str)))
 ## 문자열 함수
 '''
 capitalize 첫번째 문자를 대문자로 변경
-replace 문자를 교체해줌
+replace 지정문자를 모두 찾아서 교체해줌
 endswith 마지막문자가 조건대로 끝나는지를 판별
 sorted 문자열을 넣어주면 리스트형태로 반환
 split 특정 단어기준으로 분리하여 리스트로 반환

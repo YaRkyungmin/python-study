@@ -70,6 +70,6 @@ z1,z2,z3 = tuple_unpacking
 print(type(z1),type(z2),type(z3))
 print(z1,z2,z3)
 
-test = [1,2,3]
-zz,zz1,zz2 = test
+list_test = [1,2,3] #list도 unpacking 가능하다
+zz,zz1,zz2 = list_test
 print(zz,zz1,zz2)
