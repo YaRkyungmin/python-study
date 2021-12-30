@@ -57,7 +57,7 @@ list_edit = [1,2,3,4]
 del list_edit[2]
 print(list_edit)
 
-## list function
+## list function (함수를 반영하면 부모 list가 바로 반영된다)
 '''
 append
 pop 인덱스 위치를 지정 삭제(스택-LIFO)

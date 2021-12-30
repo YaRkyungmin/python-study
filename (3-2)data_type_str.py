@@ -31,7 +31,12 @@ raw_str = r'D:\Python Test\test1' #\뒤에 문자를 escape 문자를 사용하�
 print(raw_str)
 
 ## multi line input (역슬래시를 사용)
-multi_str = \
+multi_str0 = '''
+N
+e
+W
+'''
+multi_str1 = \
 '''
 P
 Y
@@ -46,7 +51,8 @@ multi_str2 = \
     'p'\
     'l'\
     'e'
-print(multi_str)
+print(multi_str0)
+print(multi_str1)
 print(multi_str2)
 
 ## str operator
@@ -73,7 +79,7 @@ print(str(10.1))
 tc_str = True
 print(type(str(tc_str)))
 
-## 문자열 함수
+## 문자열 함수 (함수를 반영한다고해서 부모 str값이 변경 되는것이 아니다)
 '''
 capitalize 첫번째 문자를 대문자로 변경
 replace 지정문자를 모두 찾아서 교체해줌
