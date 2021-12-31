@@ -65,9 +65,10 @@ remove 특정 값 삭제(한번만 제거)
 sort (시간복잡도가 큼)
 reverse 데이터를 반대로 (시간복잡도가 큼)
 count 특정값의 갯수를 반환
-index
+index 값의 index 위치를 알려줌
 insert 위치 지정 삽입
 extend 리스트를 연장 (slicing과 마찬가지로 범위에 순서대로 넣어줌, 통으로 들어가지 않음)
+clear 리스트를 비워줌
 '''
 list_fu = [1,2,3,4,0]
 list_fu.append(5)
@@ -97,6 +98,9 @@ print(list_fu.count(0))
 
 list_fu.extend(['extend',0])
 print(list_fu)
+
+list_fu.clear()
+print('clear:',list_fu)
 
 ## list 반복문
 while list_fu: #비어있을때까지 실행
