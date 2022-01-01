@@ -100,7 +100,9 @@ list_fu.extend(['extend',0])
 print(list_fu)
 
 list_fu.clear()
-print('clear:',list_fu)
+print(list_fu)
+
+list_fu = [1,2,3,4,0]
 
 ## list 반복문
 while list_fu: #비어있을때까지 실행
