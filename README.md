@@ -9,3 +9,4 @@
       Tuple DataType (2021-12-30)
       Dictionary DataType (2021-12-30)
       Set DataType (2021-12-31)
+    Python if(Conditional Statement) (2022-01-01)
