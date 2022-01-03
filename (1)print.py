@@ -41,9 +41,13 @@ print('{:^10}'.format('count'))
 print('{:_^10}'.format('center'))
 
 print('%5s' %('longlongpython'))
+###longlongpython
 print('%.5s' %('longlongpython')) #공간이 없는것
+###longl
 print('{:10.5}'.format('longlongpython')) #공간이 있는것
+###longl
 print('{:>10.5}'.format('longlongpython')) 
+###    longlo
 
 ## %d
 print('%d %d' % (1,2))

@@ -5,6 +5,8 @@
 # if
 print(type(True)) # 0이 아닌 수, "abc", [1,2,3,..]
 print(type(False)) # 0, '', [], (), {}
+print(True * 8)
+print(False * 2)
 
 ex = []
 if ex:
@@ -47,5 +49,5 @@ ex4 = (10,12,14)
 print(10 in ex1)
 print(60 in ex2)
 print('name' not in ex3)
-print('py' in ex3.values())
+print('py' in ex3.values()) #values를 함수를 사용하면 key값이 아닌 values에서 검색가능
 print(10 in ex4)
