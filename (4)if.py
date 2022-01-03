@@ -8,7 +8,7 @@ print(type(False)) # 0, '', [], (), {}
 
 ex = []
 if ex:
-    print("success")
+    print("success") #indentation == 4's space
 else:
     print("fail")
 
@@ -32,5 +32,20 @@ else:
 
 ## priority
 '''
-산술 > 관계 > 논리
+산술(+, -, /, *) > 관계(==, >=) > 논리(and, or, not)
 '''
+print('priority:',3+12 > 1+1)
+print('priority:', 5+10 > 3 and 7+3 == 10)
+print('priority:', 5+10 > 0 and not 7 + 3 == 10)
+
+## in, not in
+ex1 = [10,20,30]
+ex2 = {70,80,90,100}
+ex3 = {'name':'py', 'test':'thon'}
+ex4 = (10,12,14)
+
+print(10 in ex1)
+print(60 in ex2)
+print('name' not in ex3)
+print('py' in ex3.values())
+print(10 in ex4)
