@@ -26,3 +26,21 @@ while n > 0:
     if n == 2:
         continue
     print(n)
+
+## while else statement (while문이 중간에 끊기지 않고 실행됐으면 else문이 실행된다, break문과 함께 사용)
+n = 10
+while n > 0:
+    n -= 1
+    print(n)
+    if n == 4:
+        break
+else:
+    print('else 실행')
+print('while else')
+
+n = 10
+while n > 0:
+    n -= 1
+    print(n)
+else:
+    print('else 실행')
