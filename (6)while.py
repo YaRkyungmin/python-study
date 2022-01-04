@@ -36,7 +36,7 @@ while n > 0:
         break
 else:
     print('else 실행')
-print('while else')
+print('while else test_1 end')
 
 n = 10
 while n > 0:
@@ -44,3 +44,4 @@ while n > 0:
     print(n)
 else:
     print('else 실행')
+print('while else test_2 end')
