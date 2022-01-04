@@ -56,8 +56,6 @@ print("reverse:",list(reversed(str_reversed)))
 print("reverse:",tuple(reversed(str_reversed)))
 print("reverse:",set(reversed(str_reversed))) #순서가없음 랜덤으로 계속 나옴 집합은 순서 X
 
-
-
 ## break
 for_break = [1,2,3,4,100,5,6,7,8,9]
 
