@@ -56,11 +56,18 @@ print(x,y,z)
 
 ## *args(unpacking)
 '''
-enumerate 인덱스와 원소로 이루어진 tuple을 반환 한다.
+
 '''
 def args_func(*args):
-    for i, v in enumerate(args): 
+    for i, v in enumerate(args): #enumerate 인덱스와 원소로 이루어진 tuple을 반환 한다
         print('Result : {} {}'.format(i,v))
 
 
 args_func('Lee')
+
+def args_func(*args):
+    for i, v in enumerate(args,start=1): 
+        print('Result : {} {}'.format(i,v))
+
+args_func('Python')
+
