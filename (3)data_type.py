@@ -20,3 +20,21 @@ test_str = 1
 print(type(test_str) is str)
 print(type(test_str) is bool)
 print(type(test_str) is int)
+
+## mutable datatype
+'''
+list
+set
+dict
+'''
+a= [1,2,3]
+print(id(a))
+a[0] = 5
+print(id(a))
+## immutable datatype
+'''
+bool
+int
+float
+tuple
+'''
