@@ -32,10 +32,24 @@ print(id(a))
 a[0] = 5
 print(a)
 print(id(a))
+
+x = {1,2,3}
+print(id(x))
+x |= {4,5,6}
+print(x)
+print(id(x))
+
 ## immutable datatype
 '''
 bool
 int
 float
 tuple
+str
+forzenset
 '''
+s = 'abc'
+print(id(s))
+print(s[0])
+s = 'def'
+print(id(s))
