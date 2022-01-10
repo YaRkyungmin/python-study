@@ -109,7 +109,7 @@ while list_fu: #비어있을때까지 실행
     data = list_fu.pop()
     print(data)
 
-### enumerate - for문에서 index변수 없이 실행가능하게 해줌
+## enumerate - for문에서 index변수 없이 실행가능하게 해줌
 list_enumer = ['a','b','c']
 for element in enumerate(list_enumer):
     print(element) #tuple 형태로 반환 해준다
@@ -119,3 +119,13 @@ for idx,element in enumerate(list_enumer):
 
 for idx,element in enumerate(list_enumer, start=1):
     print(idx,element) #index를 1부터 시작할때
+
+## shallow copy (얕은 복사)
+
+
+shallow_list = [[1,2,3],[4,5,6]]
+copy_list = shallow_list[:]
+print(id(shallow_list),id(copy_list))
+
+
+## deep copy (깊은 복사)
