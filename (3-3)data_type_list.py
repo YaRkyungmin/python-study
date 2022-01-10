@@ -122,10 +122,15 @@ for idx,element in enumerate(list_enumer, start=1):
 
 ## shallow copy (얕은 복사)
 
-
 shallow_list = [[1,2,3],[4,5,6]]
 copy_list = shallow_list[:]
-print(id(shallow_list),id(copy_list))
-
-
-## deep copy (깊은 복사)
+print(id(shallow_list[1]),id(copy_list[1]))
+shallow_list[1].append(9)
+print(shallow_list,copy_list)
+## deep copy (깊은 복사) 내부 객체를 모두 새롭게 copy
+import copy as cafe
+deep_list = [[1,2,3],[4,5,6]]
+copy_deep = cafe.deepcopy(deep_list)
+print(id(deep_list),id(copy_deep))
+deep_list[1].append(2)
+print(deep_list,copy_deep)
