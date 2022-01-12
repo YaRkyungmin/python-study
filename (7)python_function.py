@@ -40,20 +40,15 @@ def mul_value(x):
 x, y, z = mul_value(10)
 print(x,y,z)
 
-## *args(unpacking)
+## *args, **kwargs (unpacking)
 '''
-
+* : 입력 값을 들어오는 갯수와 상관없이 튜플형태를 반환해줌
+** : 입력 값에 들어오는 갯수와 상관없이 딕셔너리 형태를 반환해줌
 '''
-def args_func(*args):
+def args_func(a,*args,**kwargs):
+    print(a)
     for i, v in enumerate(args): #enumerate 인덱스와 원소로 이루어진 tuple을 반환 한다
         print('Result : {} {}'.format(i,v))
-
-
-args_func('Lee')
-
-def args_func(*args):
-    for i, v in enumerate(args,start=1): 
-        print('Result : {} {}'.format(i,v))
-
-args_func('Python')
-
+    for v in kwargs.keys():
+        print("{}".format(v), kwargs[v])
+args_func(1,2,'Lee',name1 = 'P', name2 = 'Y',name3 = 'T')

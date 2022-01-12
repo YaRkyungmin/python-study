@@ -14,6 +14,6 @@ if __name__ == "__main__" :
 
 ## import module
 import testfunction #import할때 testfunction을 한번 실행함
-# print(__name__)
+print(__name__)
 testfunction.hello()
-# import testfunction #같은 module을 import하면(import할때 메모리에 계속 기억하고 있음) 다시 실행되지 않는다
+import testfunction #같은 module을 import하면(import할때 메모리에 계속 기억하고 있음) 다시 실행되지 않는다
