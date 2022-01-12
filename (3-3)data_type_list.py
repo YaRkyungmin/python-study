@@ -127,7 +127,9 @@ copy_list = shallow_list[:]
 print(id(shallow_list[1]),id(copy_list[1]))
 shallow_list[1].append(9)
 print(shallow_list,copy_list)
+
 ## deep copy (깊은 복사) 내부 객체를 모두 새롭게 copy
+
 import copy as cafe
 deep_list = [[1,2,3],[4,5,6]]
 copy_deep = cafe.deepcopy(deep_list)
