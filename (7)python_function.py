@@ -52,3 +52,70 @@ def args_func(a,*args,**kwargs):
     for v in kwargs.keys():
         print("{}".format(v), kwargs[v])
 args_func(1,2,'Lee',name1 = 'P', name2 = 'Y',name3 = 'T')
+
+## 중첩 function
+def function_out(num):
+    def function_in(num): #function안에서 호출된 function을 밖에서 선언하면 error 발생
+        print(num)
+    print("In func")
+    function_in(num+100)
+
+function_out(100)
+### function_in(100) #error 발생
+
+print("-----------------------")
+## lambda
+'''
+메모리 절약
+가독성 향상
+코드 간결
+function : 객체생성 -> resource(memory) 할당
+lambda : 즉시실행 -> Heap 할당 초기화 -> memory 초기화
+많이 사용시 가독성 감소
+'''
+def def_function (x,y):
+    return x*y
+
+lambda_funcution = lambda x, y:x*y #lambda_function과 같은 뜻
+
+mul_function = def_function #일반 함수 할당
+print(mul_function(10,10))
+
+print(lambda_funcution(10,10))
+
+def multilambda_fun(x,y,func):
+    print(x * y * func(100,100))
+
+multilambda_fun(10,20,def_function)
+multilambda_fun(10,20,lambda x, y : x*y)
+
+print("-------------------")
+## type annotation_variable
+'''
+실질적으로 어떠한 제약 사항도 강요되지 않음
+Mypy 도구를 이용하여 인터프리터가 체크하지못한 type버그를 찾을 수 있음
+'''
+name: str = "John Doe"
+age: int = 25
+emails: list = ["john1@doe.com", "john2@doe.com"]
+address: dict = {
+  "street": "54560 Daugherty Brooks Suite 581",
+  "city": "Stokesmouth",
+  "state": "NM",
+  "zip": "80556"
+}
+print(name, age, emails, address)
+
+## type annotation_function
+'''
+실질적으로 어떠한 제약 사항도 강요되지 않음
+'''
+def tot_length1(word: str, num: int) -> int:
+    return len(word) * num
+
+print('hint exam1 : ', tot_length1("i love you", 10))
+
+def tot_length2(word: str, num: int) -> None:
+    print('hint exam2 : ', len(word) * num)
+
+tot_length2("niceman", 10)
