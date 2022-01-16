@@ -5,3 +5,5 @@ import sys
 
 for i in range(1,3):
     print(sys.argv[i])
+
+print(len(sys.argv))
