@@ -3,7 +3,5 @@
 # Command Line Arguments
 import sys
 
-for i in range(1,3):
+for i in range(len(sys.argv)):
     print(sys.argv[i])
-
-print(len(sys.argv))

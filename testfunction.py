@@ -1,4 +1,10 @@
+'''
+This is Docstring
+'''
 def hello():
+    '''
+    This is Function Docstring
+    '''
     if __name__ == 'testfunction':
         print('__name__ : testfuction')
     
