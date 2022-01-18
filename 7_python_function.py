@@ -109,6 +109,7 @@ print(name, age, emails, address)
 ## type annotation_function
 '''
 실질적으로 어떠한 제약 사항도 강요되지 않음
+mypy를  사용하면 type error를 어느정도 잡을 수 있음
 '''
 def tot_length1(word: str, num: int) -> int:
     return len(word) * num
