@@ -8,3 +8,4 @@
 '''
 import testfunction
 print(testfunction.__doc__)
+print(testfunction.hello.__doc__)
