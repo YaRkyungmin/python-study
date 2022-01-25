@@ -8,4 +8,4 @@
 '''
 import testfunction
 print(testfunction.__doc__)
-print("git test")
+print(testfunction.hello.__doc__)
