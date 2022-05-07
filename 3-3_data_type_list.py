@@ -4,6 +4,7 @@
 
 # list datatype(sequence)
 '''
+mutable
 sequence
 중복
 수정

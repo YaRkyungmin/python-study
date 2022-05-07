@@ -46,6 +46,7 @@ print(x,y,z)
 ** : 입력 값에 들어오는 갯수와 상관없이 딕셔너리 형태를 반환해줌
 '''
 def args_func(a,*args,**kwargs):
+    print("args_func")
     print(a)
     for i, v in enumerate(args): #enumerate 인덱스와 원소로 이루어진 tuple을 반환 한다
         print('Result : {} {}'.format(i,v))
