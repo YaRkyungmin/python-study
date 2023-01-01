@@ -18,3 +18,12 @@
     
     Python Function (2022-01-04)
       Function Argument (2022-05-07)
+    Python Module (2023-01-01)
+    
+    Input Fuction (2022-12-31)
+
+    Python Class (2023-01-01)
+      Class Self (2023-01-01)
+      Init Method (2023-01-01)
+      Del Method (2023-01-01)
+      Instance Method (2023-01-01)
